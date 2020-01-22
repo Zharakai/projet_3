@@ -1,9 +1,59 @@
+#bloc_page {
+    margin: auto;
+    max-width: 100%;
+}
+
 header {
+    text-align: center;
+    color: #fdcb46;
+    background-color: #579c87;
+    padding: 1% 0%;
+}
+
+main {
+    display: flex;
+}
+
+#menu_note {
+}
+
+#menu_chic {
+}
+
+#menu_delice {
+}
+
+#menu_palette {
+
+}
+
+.menu {
+    max-width: 100%;
+}
+
+#prochainement {
     text-align: center;
 }
 
+/* Pied de page */
+
 footer {
     text-align: center;
+    color: #fdcb46;
+    background-color: #579c87;
+    position: absolute;
+    bottom: 0;
+    width: 99%;
+}
+
+.left {
+    position: relative;
+    right: 35%;
+}
+
+.right {
+    position: relative;
+    left: 35%;
 }
 
 /* Media Queries */
