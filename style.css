@@ -10,29 +10,43 @@ header {
     padding: 1% 0%;
 }
 
-main {
+section {
     display: flex;
-}
-
-#menu_note {
-}
-
-#menu_chic {
-}
-
-#menu_delice {
-}
-
-#menu_palette {
-
+    margin: auto;
 }
 
 .menu {
     max-width: 100%;
 }
 
+#menu_note {
+    margin: 5% 2.5% 2.5% 10%;
+    border: solid black 5px;
+}
+
+#menu_chic {
+    margin: 5% 10% 2.5% 2.5%;
+    border: solid black 5px;
+}
+
+#menu_delice {
+    margin: 2.5% 2.5% 10% 10%;
+    border: solid black 5px;
+}
+
+#menu_palette {
+    margin: 2.5% 10% 10% 2.5%;
+    border: solid black 5px;
+}
+
 #prochainement {
+    margin: auto;
     text-align: center;
+    color: #fdcb46;
+    background-color: #579c87;
+    border-radius: 10px;
+    max-width: 20%;
+    padding: 1% 5%
 }
 
 /* Pied de page */
