@@ -19,6 +19,8 @@ section {
     max-width: 100%;
 }
 
+/* Page principale */
+
 #menu_note {
     margin: 5% 2.5% 2.5% 10%;
     border: solid black 5px;
@@ -68,6 +70,12 @@ footer {
 .right {
     position: relative;
     left: 35%;
+}
+
+/* Pages de menus */
+
+h1 {
+    text-align: center;
 }
 
 /* Media Queries */
