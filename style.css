@@ -6,6 +6,7 @@
 header {
     text-align: center;
     color: #fdcb46;
+    font-size: 1.5em;
     background-color: #579c87;
     padding: 1% 0%;
 }
@@ -13,6 +14,7 @@ header {
 section {
     display: flex;
     margin: auto;
+    max-height: fit-content;
 }
 
 .menu {
@@ -23,30 +25,28 @@ section {
 
 #menu_note {
     margin: 5% 2.5% 2.5% 10%;
-    border: solid black 5px;
 }
 
 #menu_chic {
     margin: 5% 10% 2.5% 2.5%;
-    border: solid black 5px;
 }
 
 #menu_delice {
     margin: 2.5% 2.5% 10% 10%;
-    border: solid black 5px;
 }
 
 #menu_palette {
     margin: 2.5% 10% 10% 2.5%;
-    border: solid black 5px;
 }
 
 #prochainement {
+    font-size: 1.5em;
     margin: auto;
+    margin-bottom: 8%;
     text-align: center;
     color: #fdcb46;
     background-color: #579c87;
-    border-radius: 10px;
+    border-radius: 1rem;
     max-width: 20%;
     padding: 1% 5%
 }
@@ -55,21 +55,27 @@ section {
 
 footer {
     text-align: center;
-    color: #fdcb46;
+    font-size: 1.5em;
     background-color: #579c87;
     position: absolute;
+    position: fixed;
     bottom: 0;
     width: 99%;
 }
 
 .left {
     position: relative;
-    right: 35%;
+    right: 30%;
 }
 
 .right {
     position: relative;
-    left: 35%;
+    left: 30%;
+}
+
+a {
+    text-decoration: none;
+    color: #fdcb46;
 }
 
 /* Pages de menus */
