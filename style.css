@@ -78,8 +78,15 @@ h1 {
     text-align: center;
 }
 
+article h2, h3 {
+    text-align: center;
+}
+
 article {
+    border: saddlebrown solid 3px;
     text-align: justify;
+    padding-left: 5%;
+    padding-right: 5%;
     margin-left: 10%;
     margin-right: 10%;
     
