@@ -39,7 +39,7 @@ section {
     margin: 2.5% 10% 10% 2.5%;
 }
 
-#prochainement {
+.bouton__vert {
     font-size: 1.5em;
     margin: auto;
     margin-bottom: 8%;
