@@ -58,6 +58,18 @@ section {
 
 /* Pied de page */
 
+$shake-intensity: 2%;
+@keyframes wiggle {
+    25% {
+        // entièrement à droite
+        transform: translateX($shake-intensity);
+    }
+    75% {
+        // entièrement à gauche
+        transform: translateX(-$shake-intensity);
+    }
+}
+
 footer {
     text-align: center;
     font-size: 1.5em;
@@ -68,14 +80,22 @@ footer {
     width: 99%;
 }
 
-.left {
+.legal {
+    display: inline-block;
     position: relative;
     right: 30%;
+    &:hover {
+        animation: wiggle 100ms cubic-bezier(.4,.1,.6,.9) 3;
+    }
 }
 
-.right {
+.contact {
+    display: inline-block;
     position: relative;
     left: 30%;
+    &:hover {
+        animation: wiggle 100ms cubic-bezier(.4,.1,.6,.9) 3;
+    }
 }
 
 a {
