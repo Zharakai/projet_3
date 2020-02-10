@@ -1,101 +1,101 @@
 #bloc_page {
-    margin: auto;
-    max-width: 100%;
+  margin: auto;
+  max-width: 100%;
 }
 
 header {
-    text-align: center;
-    color: #fdcb46;
-    font-size: 1.5em;
-    background-color: #579c87;
-    padding: 1% 0%;
+  text-align: center;
+  color: #fdcb46;
+  font-size: 1.5em;
+  background-color: #579c87;
+  padding: 1% 0%;
 }
 
 section {
-    display: flex;
-    margin: auto;
-    max-height: fit-content;
+  display: flex;
+  margin: auto;
+  max-height: fit-content;
 }
 
 .menu {
-    max-width: 100%;
+  max-width: 100%;
 }
 
 /* Page principale */
-
 #menu_note {
-    margin: 5% 2.5% 2.5% 10%;
+  margin: 5% 2.5% 2.5% 10%;
 }
 
 #menu_chic {
-    margin: 5% 10% 2.5% 2.5%;
+  margin: 5% 10% 2.5% 2.5%;
 }
 
 #menu_delice {
-    margin: 2.5% 2.5% 10% 10%;
+  margin: 2.5% 2.5% 10% 10%;
 }
 
 #menu_palette {
-    margin: 2.5% 10% 10% 2.5%;
+  margin: 2.5% 10% 10% 2.5%;
 }
 
-.bouton__vert {
-    font-size: 1.5em;
-    margin: auto;
-    margin-bottom: 8%;
-    text-align: center;
-    color: #fdcb46;
-    background-color: #579c87;
-    border-radius: 1rem;
-    max-width: 20%;
-    padding: 1% 5%
+.btn__future {
+  font-size: 1.5em;
+  margin: auto;
+  margin-bottom: 8%;
+  text-align: center;
+  color: #fdcb46;
+  background-color: #579c87;
+  border-radius: 1rem;
+  max-width: 20%;
+  padding: 1% 5%;
+  transition: transform 400ms;
+}
+.btn__future:hover {
+  transform: skewX(-45deg);
 }
 
 /* Pied de page */
-
 footer {
-    text-align: center;
-    font-size: 1.5em;
-    background-color: #579c87;
-    position: absolute;
-    position: fixed;
-    bottom: 0;
-    width: 99%;
+  text-align: center;
+  font-size: 1.5em;
+  background-color: #579c87;
+  position: absolute;
+  position: fixed;
+  bottom: 0;
+  width: 99%;
 }
 
 .left {
-    position: relative;
-    right: 30%;
+  position: relative;
+  right: 30%;
 }
 
 .right {
-    position: relative;
-    left: 30%;
+  position: relative;
+  left: 30%;
 }
 
 a {
-    text-decoration: none;
-    color: #fdcb46;
+  text-decoration: none;
+  color: #fdcb46;
 }
 
 /* Pages de menus */
-
 h1 {
-    text-align: center;
+  text-align: center;
 }
 
 article h2, h3 {
-    text-align: center;
+  text-align: center;
 }
 
 article {
-    border: saddlebrown solid 3px;
-    text-align: justify;
-    padding-left: 5%;
-    padding-right: 5%;
-    margin-left: 10%;
-    margin-right: 10%;
-    
+  border: saddlebrown solid 3px;
+  text-align: justify;
+  padding-left: 5%;
+  padding-right: 5%;
+  margin-left: 10%;
+  margin-right: 10%;
 }
 
-/* Media Queries */
+/*# sourceMappingURL=style.css.map */
