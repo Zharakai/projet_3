@@ -49,10 +49,8 @@ section {
     border-radius: 1rem;
     max-width: 20%;
     padding: 1% 5%;
-    // transform: rotate(0turn);
-    transition: transform 400ms;
     &:hover {
-        transform: skewX(-45deg);
+        animation: wiggle 100ms cubic-bezier(.4,.1,.6,.9) 3;
     }
 }
 

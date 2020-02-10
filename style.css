@@ -48,10 +48,9 @@ section {
   border-radius: 1rem;
   max-width: 20%;
   padding: 1% 5%;
-  transition: transform 400ms;
 }
 .btn__future:hover {
-  transform: skewX(-45deg);
+  animation: wiggle 100ms cubic-bezier(0.4, 0.1, 0.6, 0.9) 3;
 }
 
 /* Pied de page */
