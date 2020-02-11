@@ -145,6 +145,11 @@ article {
 
 /* Alignement pour les prix des menus */
 
+p {
+    position: relative;
+}
+
 .price {
-    float: right;
+    position: absolute;
+    right: 0rem;
 }
