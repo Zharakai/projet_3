@@ -112,11 +112,26 @@ article h2, h3 {
 }
 
 article {
-    border: saddlebrown solid 3px;
     text-align: justify;
     padding-left: 5%;
     padding-right: 5%;
     margin-left: 10%;
     margin-right: 10%;
     margin-bottom: 10%;
+}
+
+.article__note {
+    background-color: #fcdfdb;
+}
+
+.article__chic {
+    background-color: #fff5fe;
+}
+
+.article__delice {
+    background-color: #edefef;
+}
+
+.article__palette {
+    background-color: #fdfffd; 
 }
