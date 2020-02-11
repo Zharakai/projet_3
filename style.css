@@ -22,19 +22,19 @@ section {
 }
 
 /* Page principale */
-#menu_note {
+.menu_note {
   margin: 5% 2.5% 2.5% 10%;
 }
 
-#menu_chic {
+.menu_chic {
   margin: 5% 10% 2.5% 2.5%;
 }
 
-#menu_delice {
+.menu_delice {
   margin: 2.5% 2.5% 10% 10%;
 }
 
-#menu_palette {
+.menu_palette {
   margin: 2.5% 10% 10% 2.5%;
 }
 
@@ -111,6 +111,7 @@ article {
   padding-right: 5%;
   margin-left: 10%;
   margin-right: 10%;
+  margin-bottom: 10%;
 }
 
 /*# sourceMappingURL=style.css.map */
