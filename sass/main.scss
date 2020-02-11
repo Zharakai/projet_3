@@ -19,6 +19,7 @@ section {
 
 .menu {
     max-width: 100%;
+    box-shadow: 0px 0px 8px #00000050;
 }
 
 /* Page principale */
@@ -134,4 +135,16 @@ article {
 
 .article__palette {
     background-color: #fdfffd; 
+}
+
+/* Police spécifique pour les menus */
+
+.h2__note, .h3__note {
+    font-family: 'Devonshire', cursive, sans-serif;
+}
+
+/* Alignement pour les prix des menus */
+
+.price {
+    float: right;
 }
