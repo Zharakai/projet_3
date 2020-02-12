@@ -23,6 +23,7 @@ section {
   transform: scale(1);
   transition: ease-in-out 250ms;
   opacity: 1;
+  margin-bottom: -1%;
 }
 .menu:hover {
   transform: scale(1.1);
