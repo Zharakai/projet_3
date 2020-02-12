@@ -19,25 +19,42 @@ section {
 
 .menu {
     max-width: 100%;
-    box-shadow: 0px 0px 8px #00000050;
+    transform: scale(1);
+    transition: ease-in-out 250ms;
+    opacity: 1;
+    &:hover {
+        transform: scale(1.10);
+        opacity: 0.7;
+        
+    }
 }
 
 /* Page principale */
 
+
+
 .menu_note {
     margin: 5% 2.5% 2.5% 10%;
+    box-shadow: 0px 0px 8px #00000050;
+    overflow: hidden;
 }
 
 .menu_chic {
     margin: 5% 10% 2.5% 2.5%;
+    box-shadow: 0px 0px 8px #00000050;
+    overflow: hidden;
 }
 
 .menu_delice {
     margin: 2.5% 2.5% 10% 10%;
+    box-shadow: 0px 0px 8px #00000050;
+    overflow: hidden;
 }
 
 .menu_palette {
     margin: 2.5% 10% 10% 2.5%;
+    box-shadow: 0px 0px 8px #00000050;
+    overflow: hidden;
 }
 
 .btn__future {
@@ -58,6 +75,7 @@ section {
 /* Pied de page */
 
 $shake-intensity: 2%;
+
 @keyframes wiggle {
     25% {
         // entièrement à droite
