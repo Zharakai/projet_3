@@ -4,8 +4,10 @@
   "description": "\"# projet_3\"",
   "main": "index.js",
   "scripts": {
-    "sass": "sass --watch ./sass/main.scss:./style.css"
+    "sass": "sass --watch ./sass/main.scss:./style.css",
+    "prefix": "postcss C:/Users/yanni_000/Documents/Git/Projet_3/style.css --use autoprefixer -d C:/Users/yanni_000/Documents/Git/Projet_3/prefixed/"
   },
   "author": "",
-  "license": "ISC"
+  "license": "ISC",
+  "browserslist": "last 4 versions"
 }

@@ -18,19 +18,19 @@ section {
   max-height: fit-content;
 }
 
+/* Page principale */
 .menu {
   max-width: 100%;
   transform: scale(1);
   transition: ease-in-out 250ms;
   opacity: 1;
-  margin-bottom: -1%;
+  margin-bottom: -3%;
 }
 .menu:hover {
   transform: scale(1.1);
   opacity: 0.7;
 }
 
-/* Page principale */
 .menu_note {
   margin: 5% 2.5% 2.5% 10%;
   box-shadow: 0px 0px 8px #00000050;
@@ -56,6 +56,7 @@ section {
 }
 
 .btn__future {
+  display: flex;
   font-size: 1.5em;
   margin: auto;
   margin-bottom: 8%;
@@ -63,13 +64,40 @@ section {
   color: #fdcb46;
   background-color: #579c87;
   border-radius: 1rem;
-  max-width: 20%;
+  max-width: 16%;
   padding: 1% 5%;
 }
-.btn__future:hover {
-  animation: wiggle 100ms cubic-bezier(0.4, 0.1, 0.6, 0.9) 3;
+
+/* Spinner */
+.spinner {
+  padding-left: 4%;
 }
 
+.spinner > div {
+  width: 7px;
+  height: 7px;
+  background-color: #fdcc46dc;
+  border-radius: 100%;
+  display: inline-block;
+  animation: sk-bouncedelay 1.4s infinite ease-in-out both;
+}
+
+.spinner .bounce1 {
+  animation-delay: -0.32s;
+}
+
+.spinner .bounce2 {
+  animation-delay: -0.16s;
+}
+
+@keyframes sk-bouncedelay {
+  0%, 80%, 100% {
+    transform: scale(0);
+  }
+  40% {
+    transform: scale(1);
+  }
+}
 /* Pied de page */
 @keyframes wiggle {
   25% {
