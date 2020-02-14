@@ -160,76 +160,77 @@ article {
   margin-bottom: 10%;
 }
 
+/* Menu La note enchantée */
 .article__note {
   background-color: #fcdfdb;
   color: #3d1319;
   font-family: "Sriracha", cursive, sans-serif;
 }
-
-.article__chic {
-  background-color: #fff5fe;
+.article__note i {
+  background: linear-gradient(90deg, #ef465f, #f6916a);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
 }
 
-.article__delice {
-  background-color: #edefef;
-  font-family: "Sriracha", cursive, sans-serif;
-}
-
-.article__palette {
-  background-color: #fdfffd;
-}
-
-/* Menu note enchantée */
 .itunes-note {
   text-align: center;
   font-size: 3rem;
 }
 
-article i {
-  background: linear-gradient(0.5turn, #f6916a, #ef465f);
-  background-clip: text;
-  -webkit-text-fill-color: transparent;
-}
-
-/* Police spécifique pour le menu la note enchantée */
 .h2__note, .h3__note {
   font-family: "Devonshire", cursive, sans-serif;
 }
 
-/* Bordures de décoration menu note enchantée */
 .h3__prelude, .h3__orgue, .h3__final {
+  /* Bordures de décoration (note enchantée) */
   border-bottom: none;
 }
 
-/* Police et couleurs spécifique pour le menu le chic à la française */
-.h2__chic {
+/* Menu Le chic à la française */
+.article__chic {
+  background-color: #fff5fe;
+}
+.article__chic .h2__chic {
   font-family: "Croissant One", cursive, sans-serif;
-  background: linear-gradient(0.25turn, #e38913, #8f5bfe);
-  background-clip: text;
+  font-size: 2rem;
+  background: linear-gradient(135deg, #e38913, #8f5bfe);
+  -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }
-
-.chic__entrance {
+.article__chic .chic__entrance {
   color: #c67412;
 }
-
-.chic__main {
+.article__chic .chic__main {
   color: #a56799;
 }
-
-.chic__sugar {
+.article__chic .chic__sugar {
   color: #6e4ccc;
 }
 
-/* Police et couleurs spécifiques pour le menu délice des papilles */
-.h2__delice {
+/* Menu Le délice des papilles */
+.article__delice {
+  background-color: #edefef;
+  font-family: "Sriracha", cursive, sans-serif;
+}
+.article__delice .h2__delice {
   font-family: "Dancing Script", cursive;
   font-size: 3rem;
-  background: linear-gradient(135deg, #001ed9, #0889fb);
+  background: linear-gradient(135deg, #001ed9, #229df9);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
-  margin-left: 20%;
-  margin-right: 20%;
+}
+
+/* Menu La palette du goût */
+.article__palette {
+  background-color: #fdfffd;
+  font-family: "Sriracha", cursive, sans-serif;
+}
+.article__palette .h2__palette {
+  font-family: "Kaushan Script", cursive;
+  font-size: 3rem;
+  background: linear-gradient(135deg, #3d923a, #beff7f);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
 }
 
 /* Alignement pour les prix des menus */
