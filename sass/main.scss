@@ -192,6 +192,16 @@ article {
 
 .h2__note, .h3__note {
     font-family: 'Devonshire', cursive, sans-serif;
+    font-weight: 100;
+}
+
+.h2__note {
+    font-size: 3rem;
+    margin-top: auto;
+}
+
+.h3__note {
+    font-size: 2rem;
 }
 
 .h3__prelude, .h3__orgue, .h3__final { /* Bordures de décoration (note enchantée) */
