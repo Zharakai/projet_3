@@ -175,6 +175,7 @@ article {
 .article__note {
     background-color: #fcdfdb;
     color: #3d1319;
+    font-family: 'Sriracha', cursive, sans-serif;
 }
 
 .article__chic {
@@ -196,10 +197,43 @@ article {
     font-size: 3rem;
 }
 
-/* Police spécifique pour les menus */
+article i {
+    background: linear-gradient(0.50turn, #f6916a, #ef465f);
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+/* Police spécifique pour le menu la note enchantée */
 
 .h2__note, .h3__note {
     font-family: 'Devonshire', cursive, sans-serif;
+}
+
+/* Police et couleurs spécifique pour le menu le chic à la française */
+
+.h2__chic {
+    font-family: 'Croissant One', cursive, sans-serif;
+    background: linear-gradient(0.25turn,#e38913, #8f5bfe);
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.chic__entrance {
+    color: #c67412;
+}
+
+.chic__main {
+    color: #a56799;
+}
+
+.chic__sugar {
+    color: #6e4ccc;
+}
+
+/* Bordures de décoration menu note enchantée */
+
+.h3__prelude, .h3__orgue, .h3__final {
+    border-bottom: none;
 }
 
 /* Alignement pour les prix des menus */

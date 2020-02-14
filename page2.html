@@ -2,7 +2,7 @@
 <html lang="fr">
 <head>
     <meta charset="UTF-8">
-    <link href="style.css" rel="stylesheet" />
+    <link href="prefixed/style.css" rel="stylesheet" />
     <link href="https://fonts.googleapis.com/css?family=Devonshire&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Croissant+One&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Dancing+Script&display=swap" rel="stylesheet">
@@ -18,28 +18,31 @@
     <h1>Le chic à la française</h1>
 
     <article class="article__chic">
-        <h2>Le chic à la française</h2>
+        <h2 class="h2__chic">Le chic à la française</h2>
 
         <h3>Pour se mettre en appétit</h3>
-        <hr>
 
-        <p>Tartatre de poulpe acidulé aux zets d'orange <span class="price">79€</span></p>
-        <p>Velouté de légumes d'antan <span class="price">57€</span></p>
-        <p>Soupe à l'oignon rivisité <span class="price">57€</span></p>
+        <div class="chic__entrance">
+            <p>Tartatre de poulpe acidulé aux zets d'orange <span class="price">79€</span></p>
+            <p>Velouté de légumes d'antan <span class="price">57€</span></p>
+            <p>Soupe à l'oignon rivisité <span class="price">57€</span></p>
+        </div>
         
         <h3>Plaisir des papilles</h3>
-        <hr>
 
-        <p>Coquilles Saint-Jacques accompagnées d'une purée de panais <span class="price">95€</span></p>
-        <p>Magret de canard et parmentier de pommes de terres <span class="price">88€</span></p>
-        <p>Pigeonneau d'Ille et Vilaine sur son lit de gnocchis aux légumes <span class="price">175€</span></p>
+        <div class="chic__main">
+            <p>Coquilles Saint-Jacques accompagnées d'une purée de panais <span class="price">95€</span></p>
+            <p>Magret de canard et parmentier de pommes de terres <span class="price">88€</span></p>
+            <p>Pigeonneau d'Ille et Vilaine sur son lit de gnocchis aux légumes <span class="price">175€</span></p>
+        </div>
 
         <h3>Gourmandises sucrées</h3>
-        <hr>
 
-        <p>Pétales de violettes glacés et purée de noisettes</p>
-        <p>Fondant aux chocolat rivisité</p>
-        <p>Millefeuille croustillant</p>
+        <div class="chic__sugar">
+            <p>Pétales de violettes glacés et purée de noisettes</p>
+            <p>Fondant aux chocolat rivisité</p>
+            <p>Millefeuille croustillant</p>
+        </div>
     </article>
 
     <footer>
