@@ -172,6 +172,7 @@ article {
 
 .article__delice {
   background-color: #edefef;
+  font-family: "Sriracha", cursive, sans-serif;
 }
 
 .article__palette {
@@ -195,6 +196,11 @@ article i {
   font-family: "Devonshire", cursive, sans-serif;
 }
 
+/* Bordures de décoration menu note enchantée */
+.h3__prelude, .h3__orgue, .h3__final {
+  border-bottom: none;
+}
+
 /* Police et couleurs spécifique pour le menu le chic à la française */
 .h2__chic {
   font-family: "Croissant One", cursive, sans-serif;
@@ -215,9 +221,15 @@ article i {
   color: #6e4ccc;
 }
 
-/* Bordures de décoration menu note enchantée */
-.h3__prelude, .h3__orgue, .h3__final {
-  border-bottom: none;
+/* Police et couleurs spécifiques pour le menu délice des papilles */
+.h2__delice {
+  font-family: "Dancing Script", cursive;
+  font-size: 3rem;
+  background: linear-gradient(135deg, #001ed9, #0889fb);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  margin-left: 20%;
+  margin-right: 20%;
 }
 
 /* Alignement pour les prix des menus */
