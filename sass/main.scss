@@ -258,6 +258,33 @@ $primary_color_note: #3d1319;
     }
 }
 
+.h3__appetit, .h3__papilles, .h3__gourmandises {
+    position: relative;
+    &::before { /* Bordures de décoration */
+        content: "";
+        display: block;
+        position: absolute;
+        height: 2px;
+        width: 40%;
+        left: 0px;
+        top: 50%;
+        background: #c67412;
+    }
+}
+
+.h3__appetit, .h3__papilles, .h3__gourmandises {
+    &::after { /* Bordures de décoration */
+        content: "";
+        display: block;
+        position: absolute;
+        height: 2px;
+        width: 40%;
+        right: 0px;
+        top: 50%;
+        background: #c67412;
+    }
+}
+
 /* Menu Le délice des papilles */
 
 .article__delice {

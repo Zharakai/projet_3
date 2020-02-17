@@ -243,6 +243,33 @@ article {
   color: #6e4ccc;
 }
 
+.h3__appetit, .h3__papilles, .h3__gourmandises {
+  position: relative;
+}
+.h3__appetit::before, .h3__papilles::before, .h3__gourmandises::before {
+  /* Bordures de décoration */
+  content: "";
+  display: block;
+  position: absolute;
+  height: 2px;
+  width: 40%;
+  left: 0px;
+  top: 50%;
+  background: #c67412;
+}
+
+.h3__appetit::after, .h3__papilles::after, .h3__gourmandises::after {
+  /* Bordures de décoration */
+  content: "";
+  display: block;
+  position: absolute;
+  height: 2px;
+  width: 40%;
+  right: 0px;
+  top: 50%;
+  background: #c67412;
+}
+
 /* Menu Le délice des papilles */
 .article__delice {
   background-color: #edefef;
