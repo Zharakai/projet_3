@@ -171,6 +171,9 @@ article {
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }
+.article__note h3 {
+  background-color: #fcdfdb;
+}
 
 .itunes-note {
   text-align: center;
@@ -191,26 +194,37 @@ article {
   font-size: 2rem;
 }
 
+.h3__prelude, .h3__orgue, .h3__final {
+  position: relative;
+}
 .h3__prelude::before, .h3__orgue::before, .h3__final::before {
   /* Bordures de décoration (note enchantée) */
   content: "";
-  border-bottom: #3d1319 solid;
-  padding-left: 3rem;
-  margin-right: 3rem;
+  display: block;
+  position: absolute;
+  height: 2px;
+  width: 40%;
+  left: 0px;
+  top: 50%;
+  background: #3d1319;
 }
 
 .h3__prelude::after, .h3__orgue::after, .h3__final::after {
   /* Bordures de décoration (note enchantée) */
   content: "";
-  border-bottom: #3d1319 solid;
-  background-size: 0.5em;
-  padding-right: 3rem;
-  margin-left: 3rem;
+  display: block;
+  position: absolute;
+  height: 2px;
+  width: 40%;
+  right: 0px;
+  top: 50%;
+  background: #3d1319;
 }
 
 /* Menu Le chic à la française */
 .article__chic {
   background-color: #fff5fe;
+  font-family: "Noto Serif", serif, sans-serif;
 }
 .article__chic .h2__chic {
   font-family: "Croissant One", cursive, sans-serif;
