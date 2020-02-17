@@ -174,9 +174,11 @@ article {
 
 /* Menu La note enchantée */
 
+$primary_color_note: #3d1319;
+
 .article__note {
     background-color: #fcdfdb;
-    color: #3d1319;
+    color: $primary_color_note;
     font-family: 'Sriracha', cursive, sans-serif;
     i {
         background: linear-gradient(90deg, #ef465f, #f6916a);
@@ -204,10 +206,24 @@ article {
     font-size: 2rem;
 }
 
-.h3__prelude, .h3__orgue, .h3__final { /* Bordures de décoration (note enchantée) */
-    border-bottom: none;
+.h3__prelude, .h3__orgue, .h3__final {
+    &::before { /* Bordures de décoration (note enchantée) */
+        content: "";
+        border-bottom: $primary_color_note solid;
+        padding-left: 3rem;
+        margin-right: 3rem;
+    }
 }
 
+.h3__prelude, .h3__orgue, .h3__final { 
+    &::after { /* Bordures de décoration (note enchantée) */
+        content: "";
+        border-bottom: $primary_color_note solid;
+        background-size: 0.5em;
+        padding-right: 3rem;
+        margin-left: 3rem;
+    }
+}
 /* Menu Le chic à la française */
 
 .article__chic {

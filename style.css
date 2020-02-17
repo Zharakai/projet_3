@@ -191,9 +191,21 @@ article {
   font-size: 2rem;
 }
 
-.h3__prelude, .h3__orgue, .h3__final {
+.h3__prelude::before, .h3__orgue::before, .h3__final::before {
   /* Bordures de décoration (note enchantée) */
-  border-bottom: none;
+  content: "";
+  border-bottom: #3d1319 solid;
+  padding-left: 3rem;
+  margin-right: 3rem;
+}
+
+.h3__prelude::after, .h3__orgue::after, .h3__final::after {
+  /* Bordures de décoration (note enchantée) */
+  content: "";
+  border-bottom: #3d1319 solid;
+  background-size: 0.5em;
+  padding-right: 3rem;
+  margin-left: 3rem;
 }
 
 /* Menu Le chic à la française */
