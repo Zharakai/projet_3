@@ -4,6 +4,7 @@
 }
 
 header {
+    font-family: 'Prompt', sans-serif;
     text-align: center;
     color: #fdcb46;
     font-size: 1.5em;
@@ -107,7 +108,7 @@ $shadow: #00000050;
 
 /* Pied de page */
 
-$shake-intensity: 2%;
+$shake-intensity: 4%;
 
 @keyframes wiggle {
     25% {
@@ -343,12 +344,43 @@ $primary_color_note: #3d1319;
 .article__palette {
     background-color: #fdfffd;
     font-family: 'Sriracha', cursive, sans-serif;
+    p {
+        max-width: 90%;
+        margin: auto;
+    }
     .h2__palette {
         font-family: 'Kaushan Script', cursive;
         font-size: 3rem;
         background: linear-gradient(135deg, #3d923a, #beff7f);
         -webkit-background-clip: text;
         -webkit-text-fill-color: transparent;
+    }
+    h3 {
+        position: relative;
+        font-weight: 100;
+        &::before { /* Bordures de décoration */
+            content: "";
+            display: block;
+            position: absolute;
+            min-width: 35%;
+            left: 0px;
+            top: 50%;
+            height: 5px;
+            border-radius: 5rem;
+            background: linear-gradient(135deg, #3d923a, #beff7f);
+        }
+        &::after { /* Bordures de décoration */
+            content: "";
+            display: block;
+            position: absolute;
+            min-width: 35%;
+            right: 0px;
+            top: 50%;
+            height: 5px;
+            border-style: wavy;
+            border-radius: 5rem;
+            background: linear-gradient(135deg, #beff7f, #3d923a);
+        }
     }
 }
 

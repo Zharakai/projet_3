@@ -5,6 +5,7 @@
 }
 
 header {
+  font-family: "Prompt", sans-serif;
   text-align: center;
   color: #fdcb46;
   font-size: 1.5em;
@@ -103,10 +104,10 @@ section {
 /* Pied de page */
 @keyframes wiggle {
   25% {
-    transform: translateX(2%);
+    transform: translateX(4%);
   }
   75% {
-    transform: translateX(-2%);
+    transform: translateX(-4%);
   }
 }
 footer {
@@ -333,12 +334,45 @@ article {
   background-color: #fdfffd;
   font-family: "Sriracha", cursive, sans-serif;
 }
+.article__palette p {
+  max-width: 90%;
+  margin: auto;
+}
 .article__palette .h2__palette {
   font-family: "Kaushan Script", cursive;
   font-size: 3rem;
   background: linear-gradient(135deg, #3d923a, #beff7f);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
+}
+.article__palette h3 {
+  position: relative;
+  font-weight: 100;
+}
+.article__palette h3::before {
+  /* Bordures de décoration */
+  content: "";
+  display: block;
+  position: absolute;
+  min-width: 35%;
+  left: 0px;
+  top: 50%;
+  height: 5px;
+  border-radius: 5rem;
+  background: linear-gradient(135deg, #3d923a, #beff7f);
+}
+.article__palette h3::after {
+  /* Bordures de décoration */
+  content: "";
+  display: block;
+  position: absolute;
+  min-width: 35%;
+  right: 0px;
+  top: 50%;
+  height: 5px;
+  border-style: wavy;
+  border-radius: 5rem;
+  background: linear-gradient(135deg, #beff7f, #3d923a);
 }
 
 /* Alignement pour les prix des menus */
