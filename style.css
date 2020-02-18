@@ -226,6 +226,37 @@ article {
   background-color: #fff5fe;
   font-family: "Noto Serif", serif, sans-serif;
 }
+.article__chic p {
+  max-width: 90%;
+  margin: auto;
+}
+.article__chic h3 {
+  font-size: 1.3rem;
+  font-weight: 600;
+  position: relative;
+}
+.article__chic h3::before {
+  /* Bordures de décoration */
+  content: "";
+  display: block;
+  position: absolute;
+  min-width: 35%;
+  left: 0px;
+  top: 50%;
+  border-top: solid 1px;
+  border-radius: 5rem;
+}
+.article__chic h3::after {
+  /* Bordures de décoration */
+  content: "";
+  display: block;
+  position: absolute;
+  min-width: 35%;
+  right: 0px;
+  top: 50%;
+  border-top: solid 1px;
+  border-radius: 5rem;
+}
 .article__chic .h2__chic {
   font-family: "Croissant One", cursive, sans-serif;
   font-size: 2rem;
@@ -241,33 +272,6 @@ article {
 }
 .article__chic .chic__sugar {
   color: #6e4ccc;
-}
-
-.h3__appetit, .h3__papilles, .h3__gourmandises {
-  position: relative;
-}
-.h3__appetit::before, .h3__papilles::before, .h3__gourmandises::before {
-  /* Bordures de décoration */
-  content: "";
-  display: block;
-  position: absolute;
-  height: 2px;
-  width: 40%;
-  left: 0px;
-  top: 50%;
-  background: #c67412;
-}
-
-.h3__appetit::after, .h3__papilles::after, .h3__gourmandises::after {
-  /* Bordures de décoration */
-  content: "";
-  display: block;
-  position: absolute;
-  height: 2px;
-  width: 40%;
-  right: 0px;
-  top: 50%;
-  background: #c67412;
 }
 
 /* Menu Le délice des papilles */

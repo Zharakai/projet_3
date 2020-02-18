@@ -235,11 +235,40 @@ $primary_color_note: #3d1319;
         background: $primary_color_note;
     }
 }
-/* Menu Le chic à la française */
 
+/* Menu Le chic à la française */
 .article__chic {
     background-color: #fff5fe;
     font-family: 'Noto Serif', serif, sans-serif;
+    p {
+        max-width: 90%;
+        margin: auto;
+    }
+    h3 {
+        font-size: 1.3rem;
+        font-weight: 600;
+        position: relative;
+        &::before { /* Bordures de décoration */
+            content: "";
+            display: block;
+            position: absolute;
+            min-width: 35%;
+            left: 0px;
+            top: 50%;
+            border-top: solid 1px;
+            border-radius: 5rem;
+        }
+        &::after { /* Bordures de décoration */
+            content: "";
+            display: block;
+            position: absolute;
+            min-width: 35%;
+            right: 0px;
+            top: 50%;
+            border-top: solid 1px;
+            border-radius: 5rem;
+        }
+    }
     .h2__chic {
         font-family: 'Croissant One', cursive, sans-serif;
         font-size: 2rem;
@@ -258,35 +287,7 @@ $primary_color_note: #3d1319;
     }
 }
 
-.h3__appetit, .h3__papilles, .h3__gourmandises {
-    position: relative;
-    &::before { /* Bordures de décoration */
-        content: "";
-        display: block;
-        position: absolute;
-        height: 2px;
-        width: 40%;
-        left: 0px;
-        top: 50%;
-        background: #c67412;
-    }
-}
-
-.h3__appetit, .h3__papilles, .h3__gourmandises {
-    &::after { /* Bordures de décoration */
-        content: "";
-        display: block;
-        position: absolute;
-        height: 2px;
-        width: 40%;
-        right: 0px;
-        top: 50%;
-        background: #c67412;
-    }
-}
-
 /* Menu Le délice des papilles */
-
 .article__delice {
     background-color: #edefef;
     font-family: 'Sriracha', cursive, sans-serif;
@@ -300,7 +301,6 @@ $primary_color_note: #3d1319;
 }
 
 /* Menu La palette du goût */
-
 .article__palette {
     background-color: #fdfffd;
     font-family: 'Sriracha', cursive, sans-serif;
