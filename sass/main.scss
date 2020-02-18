@@ -291,12 +291,51 @@ $primary_color_note: #3d1319;
 .article__delice {
     background-color: #edefef;
     font-family: 'Sriracha', cursive, sans-serif;
+    font-weight: lighter;
+    p {
+        max-width: 90%;
+        margin: auto;
+    }
     .h2__delice {
         font-family: 'Dancing Script', cursive;
         font-size: 3rem;
         background: linear-gradient(135deg, #001ed9, #229df9);
         -webkit-background-clip: text;
         -webkit-text-fill-color: transparent;
+    }
+    h3 {
+        font-size: 1.3rem;
+        font-weight: 100;
+        position: relative;
+        &::before { /* Bordures de décoration */
+            content: "";
+            display: block;
+            position: absolute;
+            min-width: 35%;
+            left: 0px;
+            top: 50%;
+            height: 4px;
+            border-radius: 0 5rem 0 5rem;
+        }
+        &::after { /* Bordures de décoration */
+            content: "";
+            display: block;
+            position: absolute;
+            min-width: 35%;
+            right: 0px;
+            top: 50%;
+            height: 4px;
+            border-radius: 5rem 0 5rem 0;
+        }
+    }
+    .h3__commencer {
+        &::before, &::after {background-color: #0228dd;}
+    }
+    .h3__continuer {
+        &::before, &::after {background-color: #0670f3;}
+    }
+    .h3__terminer {
+        &::before, &::after {background-color: #229df9;}
     }
 }
 

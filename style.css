@@ -278,6 +278,11 @@ article {
 .article__delice {
   background-color: #edefef;
   font-family: "Sriracha", cursive, sans-serif;
+  font-weight: lighter;
+}
+.article__delice p {
+  max-width: 90%;
+  margin: auto;
 }
 .article__delice .h2__delice {
   font-family: "Dancing Script", cursive;
@@ -285,6 +290,42 @@ article {
   background: linear-gradient(135deg, #001ed9, #229df9);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
+}
+.article__delice h3 {
+  font-size: 1.3rem;
+  font-weight: 100;
+  position: relative;
+}
+.article__delice h3::before {
+  /* Bordures de décoration */
+  content: "";
+  display: block;
+  position: absolute;
+  min-width: 35%;
+  left: 0px;
+  top: 50%;
+  height: 4px;
+  border-radius: 0 5rem 0 5rem;
+}
+.article__delice h3::after {
+  /* Bordures de décoration */
+  content: "";
+  display: block;
+  position: absolute;
+  min-width: 35%;
+  right: 0px;
+  top: 50%;
+  height: 4px;
+  border-radius: 5rem 0 5rem 0;
+}
+.article__delice .h3__commencer::before, .article__delice .h3__commencer::after {
+  background-color: #0228dd;
+}
+.article__delice .h3__continuer::before, .article__delice .h3__continuer::after {
+  background-color: #0670f3;
+}
+.article__delice .h3__terminer::before, .article__delice .h3__terminer::after {
+  background-color: #229df9;
 }
 
 /* Menu La palette du goût */
