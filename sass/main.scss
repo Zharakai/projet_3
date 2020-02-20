@@ -14,7 +14,7 @@ header {
     color: #fdcb46;
     font-size: 1.5em;
     background-color: #579c87;
-    padding: 1% 0%;
+    padding: 0.5rem 0;
 }
 
 article {
@@ -65,6 +65,7 @@ $shadow: #00000050;
 }
 
 .btn__future {
+    font-family: 'Prompt', sans-serif;
     display: flex;
     flex-wrap: nowrap;
     font-size: 1.5em;
@@ -74,7 +75,7 @@ $shadow: #00000050;
     color: #fdcb46;
     background-color: #579c87;
     border-radius: 1rem;
-    max-width: 17%;
+    max-width: 19%;
     padding: 1% 5%;
 }
 
@@ -127,6 +128,7 @@ $shake-intensity: 4%;
 }
 
 footer {
+    font-family: 'Prompt', sans-serif;
     text-align: center;
     font-size: 1.5em;
     background-color: #579c87;
@@ -166,6 +168,7 @@ a {
 
 h1 {
     text-align: center;
+    font-family: 'Prompt', sans-serif;
 }
 
 section h2, h3 {
@@ -181,6 +184,15 @@ section {
     margin-bottom: 10%;
 }
 
+p {
+    position: relative; /* Alignement pour les prix des menus */
+}
+
+.price {
+    position: absolute; /* Alignement pour les prix des menus */
+    right: 0rem;
+}
+
 /* Menu La note enchantée */
 $primary_color_note: #3d1319;
 
@@ -188,6 +200,7 @@ $primary_color_note: #3d1319;
     background-color: #fcdfdb;
     color: $primary_color_note;
     font-family: 'Sriracha', cursive, sans-serif;
+    padding-bottom: 1%;
     i {
         background: linear-gradient(90deg, #ef465f, #f6916a);
         -webkit-background-clip: text;
@@ -220,21 +233,23 @@ $primary_color_note: #3d1319;
         content: "";
         display: block;
         position: absolute;
-        height: 2px;
+        height: 5px;
         width: 40%;
         left: 0px;
         top: 50%;
         background: $primary_color_note;
+        border-radius: 5rem;
     }
     &::after { /* Bordures de décoration (note enchantée) */
         content: "";
         display: block;
         position: absolute;
-        height: 2px;
+        height: 5px;
         width: 40%;
         right: 0px;
         top: 50%;
         background: $primary_color_note;
+        border-radius: 5rem;
     }
 
     a { /* Animation pour souligner de gauche à droite entrées/plats/desserts (note enchantée) */
@@ -275,9 +290,11 @@ $color_sugar_chic: #6e4ccc;
 .section__chic {
     background-color: #fff5fe;
     font-family: 'Noto Serif', serif, sans-serif;
+    padding-bottom: 2%;
     p {
         max-width: 90%;
         margin: auto;
+        margin-top: 1rem;
     }
     h3 {
         font-size: 1.3rem;
@@ -415,9 +432,11 @@ $color_sugar_chic: #6e4ccc;
     font-family: 'Sriracha', cursive, sans-serif;
     font-weight: lighter;
     padding-top: 2%;
+    padding-bottom: 2%;
     p {
         max-width: 90%;
         margin: auto;
+        margin-top: 0.5rem;
     }
     .h2__delice {
         font-family: 'Dancing Script', cursive;
@@ -494,13 +513,17 @@ $color_sugar_chic: #6e4ccc;
 .section__palette {
     background-color: #fdfffd;
     font-family: 'Sriracha', cursive, sans-serif;
+    padding-top: 2%;
+    padding-bottom: 2%;
     p {
         max-width: 90%;
         margin: auto;
+        margin-top: 0.5rem;
     }
     .h2__palette {
         font-family: 'Kaushan Script', cursive;
         font-size: 3rem;
+        margin-bottom: 3rem;
         background: linear-gradient(135deg, #3d923a, #beff7f);
         -webkit-background-clip: text;
         -webkit-text-fill-color: transparent;
@@ -515,7 +538,7 @@ $color_sugar_chic: #6e4ccc;
             min-width: 35%;
             left: 0px;
             top: 50%;
-            height: 5px;
+            height: 6px;
             border-radius: 5rem;
             background: linear-gradient(135deg, #3d923a, #beff7f);
         }
@@ -526,7 +549,7 @@ $color_sugar_chic: #6e4ccc;
             min-width: 35%;
             right: 0px;
             top: 50%;
-            height: 5px;
+            height: 6px;
             border-style: wavy;
             border-radius: 5rem;
             background: linear-gradient(135deg, #beff7f, #3d923a);
@@ -560,15 +583,4 @@ $color_sugar_chic: #6e4ccc;
             }
         }
     }
-}
-
-/* Alignement pour les prix des menus */
-
-p {
-    position: relative;
-}
-
-.price {
-    position: absolute;
-    right: 0rem;
 }
