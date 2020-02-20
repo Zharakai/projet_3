@@ -581,4 +581,27 @@ p {
   transform-origin: left;
 }
 
+/* Media Queries pour les écrans de petites tailles <1440px */
+@media all and (max-width: 1439px) {
+  .btn__future {
+    max-width: 24%;
+  }
+}
+/* Media Queries pour les écrans de petites tailles <1024px */
+@media all and (max-width: 1024px) {
+  .legal {
+    right: 17rem;
+  }
+
+  .contact {
+    left: 17rem;
+  }
+}
+/* Media Queries pour les écrans de grandes tailles */
+@media all and (min-width: 2560px) {
+  .btn__future {
+    max-width: 9%;
+  }
+}
+
 /*# sourceMappingURL=style.css.map */
