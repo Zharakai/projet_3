@@ -124,6 +124,9 @@ footer {
   bottom: 0;
   width: 100%;
 }
+footer p {
+  margin: 0.5% 0%;
+}
 
 .legal {
   display: inline-block;
@@ -211,13 +214,30 @@ section {
   top: 50%;
   background: #3d1319;
 }
+.h3__prelude::after, .h3__orgue::after, .h3__final::after {
+  /* Bordures de décoration (note enchantée) */
+  content: "";
+  display: block;
+  position: absolute;
+  height: 2px;
+  width: 40%;
+  right: 0px;
+  top: 50%;
+  background: #3d1319;
+}
 .h3__prelude a, .h3__orgue a, .h3__final a {
+  /* Animation pour souligner de gauche à droite entrées/plats/desserts (note enchantée) */
   position: relative;
   color: #3d1319;
   text-decoration: none;
 }
 .h3__prelude a:hover, .h3__orgue a:hover, .h3__final a:hover {
   color: #3d1319;
+}
+.h3__prelude a:hover::before, .h3__orgue a:hover::before, .h3__final a:hover::before {
+  visibility: visible;
+  -webkit-transform: scaleX(1);
+  transform: scaleX(1);
 }
 .h3__prelude a::before, .h3__orgue a::before, .h3__final a::before {
   content: "";
@@ -233,23 +253,6 @@ section {
   -webkit-transition: all 300ms ease-in-out 0s;
   transition: all 300ms ease-in-out 0s;
   transform-origin: left;
-}
-.h3__prelude a:hover::before, .h3__orgue a:hover::before, .h3__final a:hover::before {
-  visibility: visible;
-  -webkit-transform: scaleX(1);
-  transform: scaleX(1);
-}
-
-.h3__prelude::after, .h3__orgue::after, .h3__final::after {
-  /* Bordures de décoration (note enchantée) */
-  content: "";
-  display: block;
-  position: absolute;
-  height: 2px;
-  width: 40%;
-  right: 0px;
-  top: 50%;
-  background: #3d1319;
 }
 
 /* Menu Le chic à la française */
@@ -274,8 +277,8 @@ section {
   min-width: 35%;
   left: 0px;
   top: 50%;
-  border-top: solid 5px;
-  border-radius: 50% 0 0 50%;
+  border-top: solid 6px;
+  border-radius: 60% 0 0 60%;
 }
 .section__chic h3::after {
   /* Bordures de décoration */
@@ -285,8 +288,8 @@ section {
   min-width: 35%;
   right: 0px;
   top: 50%;
-  border-top: solid 5px;
-  border-radius: 0 50% 50% 0;
+  border-top: solid 6px;
+  border-radius: 0 60% 60% 0;
 }
 .section__chic .h2__chic {
   font-family: "Croissant One", cursive, sans-serif;
@@ -300,11 +303,98 @@ section {
 .section__chic .chic__entrance {
   color: #c67412;
 }
+.section__chic .chic__entrance a {
+  /* Animation pour souligner de gauche à droite entrées/plats/desserts (chic à la française) */
+  position: relative;
+  color: #c67412;
+  text-decoration: none;
+}
+.section__chic .chic__entrance a:hover {
+  color: #c67412;
+}
+.section__chic .chic__entrance a:hover::before {
+  visibility: visible;
+  -webkit-transform: scaleX(1);
+  transform: scaleX(1);
+}
+.section__chic .chic__entrance a::before {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 2px;
+  bottom: 0;
+  left: 0;
+  background-color: #c67412;
+  visibility: hidden;
+  -webkit-transform: scaleX(0);
+  transform: scaleX(0);
+  -webkit-transition: all 300ms ease-in-out 0s;
+  transition: all 300ms ease-in-out 0s;
+  transform-origin: left;
+}
 .section__chic .chic__main {
   color: #a56799;
 }
+.section__chic .chic__main a {
+  /* Animation pour souligner de gauche à droite entrées/plats/desserts (chic à la française) */
+  position: relative;
+  color: #a56799;
+  text-decoration: none;
+}
+.section__chic .chic__main a:hover {
+  color: #a56799;
+}
+.section__chic .chic__main a:hover::before {
+  visibility: visible;
+  -webkit-transform: scaleX(1);
+  transform: scaleX(1);
+}
+.section__chic .chic__main a::before {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 2px;
+  bottom: 0;
+  left: 0;
+  background-color: #a56799;
+  visibility: hidden;
+  -webkit-transform: scaleX(0);
+  transform: scaleX(0);
+  -webkit-transition: all 300ms ease-in-out 0s;
+  transition: all 300ms ease-in-out 0s;
+  transform-origin: left;
+}
 .section__chic .chic__sugar {
   color: #6e4ccc;
+}
+.section__chic .chic__sugar a {
+  /* Animation pour souligner de gauche à droite entrées/plats/desserts (chic à la française) */
+  position: relative;
+  color: #6e4ccc;
+  text-decoration: none;
+}
+.section__chic .chic__sugar a:hover {
+  color: #6e4ccc;
+}
+.section__chic .chic__sugar a:hover::before {
+  visibility: visible;
+  -webkit-transform: scaleX(1);
+  transform: scaleX(1);
+}
+.section__chic .chic__sugar a::before {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 2px;
+  bottom: 0;
+  left: 0;
+  background-color: #6e4ccc;
+  visibility: hidden;
+  -webkit-transform: scaleX(0);
+  transform: scaleX(0);
+  -webkit-transition: all 300ms ease-in-out 0s;
+  transition: all 300ms ease-in-out 0s;
+  transform-origin: left;
 }
 
 /* Menu Le délice des papilles */
@@ -312,6 +402,7 @@ section {
   background-color: #edefef;
   font-family: "Sriracha", cursive, sans-serif;
   font-weight: lighter;
+  padding-top: 2%;
 }
 .section__delice p {
   max-width: 90%;
@@ -350,6 +441,35 @@ section {
   top: 50%;
   height: 4px;
   border-radius: 5rem 0 5rem 0;
+}
+.section__delice h3 a {
+  /* Animation pour souligner de gauche à droite entrées/plats/desserts (délice des papilles) */
+  position: relative;
+  color: black;
+  text-decoration: none;
+}
+.section__delice h3 a:hover {
+  color: black;
+}
+.section__delice h3 a:hover::before {
+  visibility: visible;
+  -webkit-transform: scaleX(1);
+  transform: scaleX(1);
+}
+.section__delice h3 a::before {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 2px;
+  bottom: 0;
+  left: 0;
+  background-color: black;
+  visibility: hidden;
+  -webkit-transform: scaleX(0);
+  transform: scaleX(0);
+  -webkit-transition: all 300ms ease-in-out 0s;
+  transition: all 300ms ease-in-out 0s;
+  transform-origin: left;
 }
 .section__delice .h3__commencer::before, .section__delice .h3__commencer::after {
   background-color: #0228dd;
@@ -405,6 +525,35 @@ section {
   border-style: wavy;
   border-radius: 5rem;
   background: linear-gradient(135deg, #beff7f, #3d923a);
+}
+.section__palette h3 a {
+  /* Animation pour souligner de gauche à droite entrées/plats/desserts (délice des papilles) */
+  position: relative;
+  color: black;
+  text-decoration: none;
+}
+.section__palette h3 a:hover {
+  color: black;
+}
+.section__palette h3 a:hover::before {
+  visibility: visible;
+  -webkit-transform: scaleX(1);
+  transform: scaleX(1);
+}
+.section__palette h3 a::before {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 2px;
+  bottom: 0;
+  left: 0;
+  background-color: black;
+  visibility: hidden;
+  -webkit-transform: scaleX(0);
+  transform: scaleX(0);
+  -webkit-transition: all 300ms ease-in-out 0s;
+  transition: all 300ms ease-in-out 0s;
+  transform-origin: left;
 }
 
 /* Alignement pour les prix des menus */
