@@ -304,7 +304,7 @@ $color_sugar_chic: #6e4ccc;
             content: "";
             display: block;
             position: absolute;
-            min-width: 35%;
+            width: 35%;
             left: 0px;
             top: 50%;
             border-top: solid 6px;
@@ -314,7 +314,7 @@ $color_sugar_chic: #6e4ccc;
             content: "";
             display: block;
             position: absolute;
-            min-width: 35%;
+            width: 35%;
             right: 0px;
             top: 50%;
             border-top: solid 6px;
@@ -453,7 +453,7 @@ $color_sugar_chic: #6e4ccc;
             content: "";
             display: block;
             position: absolute;
-            min-width: 35%;
+            width: 35%;
             left: 0px;
             top: 50%;
             height: 4px;
@@ -463,7 +463,7 @@ $color_sugar_chic: #6e4ccc;
             content: "";
             display: block;
             position: absolute;
-            min-width: 35%;
+            width: 35%;
             right: 0px;
             top: 50%;
             height: 4px;
@@ -535,7 +535,7 @@ $color_sugar_chic: #6e4ccc;
             content: "";
             display: block;
             position: absolute;
-            min-width: 35%;
+            width: 35%;
             left: 0px;
             top: 50%;
             height: 6px;
@@ -546,7 +546,7 @@ $color_sugar_chic: #6e4ccc;
             content: "";
             display: block;
             position: absolute;
-            min-width: 35%;
+            width: 35%;
             right: 0px;
             top: 50%;
             height: 6px;
@@ -585,16 +585,17 @@ $color_sugar_chic: #6e4ccc;
     }
 }
 
-/* Media Queries pour les écrans de petites tailles <1440px */
-
-@media all and (max-width: 1439px) {
-    .btn__future {
-        max-width: 24%;
+/* Media Queries pour les écrans de petites tailles <768px */
+@media all and (max-width: 768px) {
+    @-webkit-viewport {
+        width: device-width;
+    }
+    article {
+        flex-direction: column !important; 
     }
 }
 
 /* Media Queries pour les écrans de petites tailles <1024px */
-
 @media all and (max-width: 1024px) {
     .legal {
         right: 17rem;
@@ -603,10 +604,35 @@ $color_sugar_chic: #6e4ccc;
     .contact {
         left: 17rem;
     }
+    #bloc_page {
+        min-width: 100%;
+        margin: auto;
+    }
+    section {
+        margin: auto;
+    }
+    .section__palette {
+        padding-bottom: 10%;
+    }
+    h3 {
+        &::before, &::after {
+            max-width: 25%;
+        }
+    }
+    i {
+        width: 8%;
+        margin: auto;
+    }
+}
+
+/* Media Queries pour les écrans de petites tailles <1440px */
+@media all and (max-width: 1439px) {
+    .btn__future {
+        max-width: 24%;
+    }
 }
 
 /* Media Queries pour les écrans de grandes tailles */
-
 @media all and (min-width: 2560px) {
     .btn__future {
         max-width: 9%;
