@@ -75,8 +75,9 @@ $shadow: #00000050;
     color: #fdcb46;
     background-color: #579c87;
     border-radius: 1rem;
-    max-width: 19%;
     padding: 1% 5%;
+    width: 230px;
+    margin-bottom: 25%;
 }
 
 /* Animation points de suspensions */
@@ -585,18 +586,22 @@ $color_sugar_chic: #6e4ccc;
     }
 }
 
-/* Media Queries pour les écrans de petites tailles <768px */
-@media all and (max-width: 768px) {
+/* Media Queries pour les écrans de petites tailles <425px */
+@media all and (max-width: 425px) {
     @-webkit-viewport {
         width: device-width;
     }
     article {
-        flex-direction: column !important; 
+        flex-direction: column; 
+    }
+    .menu_note, .menu_chic, .menu_delice, .menu_palette {
+        margin: auto;
+        margin: 3% 3%;
     }
 }
 
 /* Media Queries pour les écrans de petites tailles <1024px */
-@media all and (max-width: 1024px) {
+@media all and (max-width: 1023px) {
     .legal {
         right: 17rem;
     }
@@ -618,23 +623,5 @@ $color_sugar_chic: #6e4ccc;
         &::before, &::after {
             max-width: 25%;
         }
-    }
-    i {
-        width: 8%;
-        margin: auto;
-    }
-}
-
-/* Media Queries pour les écrans de petites tailles <1440px */
-@media all and (max-width: 1439px) {
-    .btn__future {
-        max-width: 24%;
-    }
-}
-
-/* Media Queries pour les écrans de grandes tailles */
-@media all and (min-width: 2560px) {
-    .btn__future {
-        max-width: 9%;
     }
 }
