@@ -122,19 +122,13 @@ footer {
   text-align: center;
   font-size: 1.5em;
   background-color: #579c87;
-  position: absolute;
   position: fixed;
   bottom: 0;
   width: 100%;
 }
-footer p {
-  margin: 0.5% 0%;
-}
 
 .legal {
   display: inline-block;
-  position: relative;
-  right: 30%;
 }
 .legal:hover {
   animation: wiggle 100ms cubic-bezier(0.4, 0.1, 0.6, 0.9) 3;
@@ -142,8 +136,6 @@ footer p {
 
 .contact {
   display: inline-block;
-  position: relative;
-  left: 30%;
 }
 .contact:hover {
   animation: wiggle 100ms cubic-bezier(0.4, 0.1, 0.6, 0.9) 3;
@@ -152,6 +144,17 @@ footer p {
 a {
   text-decoration: none;
   color: #fdcb46;
+}
+
+.grid {
+  display: grid;
+  display: flex;
+}
+.grid .areaA {
+  flex: 1;
+}
+.grid .areaB {
+  flex: 1;
 }
 
 /* Pages de menus */
