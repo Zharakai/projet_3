@@ -125,6 +125,7 @@ footer {
   position: fixed;
   bottom: 0;
   width: 100%;
+  padding: 0.5% 0;
 }
 
 .legal {
@@ -152,9 +153,13 @@ a {
 }
 .grid .areaA {
   flex: 1;
+  text-align: left;
+  margin-left: 2%;
 }
 .grid .areaB {
   flex: 1;
+  text-align: right;
+  margin-right: 2%;
 }
 
 /* Pages de menus */
@@ -193,6 +198,7 @@ p {
   color: #3d1319;
   font-family: "Sriracha", cursive, sans-serif;
   padding-bottom: 1%;
+  margin-bottom: 15%;
 }
 .section__note i {
   background: linear-gradient(90deg, #ef465f, #f6916a);
@@ -511,7 +517,8 @@ p {
   background-color: #fdfffd;
   font-family: "Sriracha", cursive, sans-serif;
   padding-top: 2%;
-  padding-bottom: 2%;
+  padding-bottom: 4%;
+  margin-bottom: 15%;
 }
 .section__palette p {
   max-width: 90%;
@@ -599,6 +606,23 @@ p {
     margin: 3% 3%;
   }
 }
+/* Media Queries pour les écrans de petites tailles <768px */
+@media all and (max-width: 767px) {
+  @-webkit-viewport {
+    width: device-width;
+  }
+  .section__chic h3::before, .section__chic h3::after {
+    width: 6%;
+  }
+
+  .section__delice h3::before, .section__delice h3::after {
+    width: 15%;
+  }
+
+  .section__palette h3::before, .section__palette h3::after {
+    width: 20%;
+  }
+}
 /* Media Queries pour les écrans de petites tailles <1024px */
 @media all and (max-width: 1023px) {
   .legal {
@@ -616,6 +640,14 @@ p {
 
   section {
     margin: auto;
+  }
+
+  .section__chic {
+    margin-bottom: 25%;
+  }
+
+  .section__delice {
+    margin-bottom: 25%;
   }
 
   .section__palette {

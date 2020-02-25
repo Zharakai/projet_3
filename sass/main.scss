@@ -135,6 +135,7 @@ footer {
     position: fixed;
     bottom: 0;
     width: 100%;
+    padding: 0.5% 0;
 }
 
 .legal {
@@ -161,9 +162,13 @@ a {
     display: flex;
     .areaA{
         flex: 1;
+        text-align: left;
+        margin-left: 2%;
     }
     .areaB {
         flex: 1;
+        text-align: right;
+        margin-right: 2%;
     }
 }
 
@@ -204,6 +209,7 @@ $primary_color_note: #3d1319;
     color: $primary_color_note;
     font-family: 'Sriracha', cursive, sans-serif;
     padding-bottom: 1%;
+    margin-bottom: 15%;
     i {
         background: linear-gradient(90deg, #ef465f, #f6916a);
         -webkit-background-clip: text;
@@ -517,7 +523,8 @@ $color_sugar_chic: #6e4ccc;
     background-color: #fdfffd;
     font-family: 'Sriracha', cursive, sans-serif;
     padding-top: 2%;
-    padding-bottom: 2%;
+    padding-bottom: 4%;
+    margin-bottom: 15%;
     p {
         max-width: 90%;
         margin: auto;
@@ -602,6 +609,34 @@ $color_sugar_chic: #6e4ccc;
     }
 }
 
+/* Media Queries pour les écrans de petites tailles <768px */
+@media all and (max-width: 767px) {
+    @-webkit-viewport {
+        width: device-width;
+    }
+    .section__chic {
+        h3 {
+            &::before, &::after {
+                width: 6%;
+            }
+        }
+    }
+    .section__delice {
+        h3 {
+            &::before, &::after {
+                width: 15%;
+            }
+        }
+    }
+    .section__palette {
+        h3 {
+            &::before, &::after {
+                width: 20%;
+            }
+        }
+    }
+}
+
 /* Media Queries pour les écrans de petites tailles <1024px */
 @media all and (max-width: 1023px) {
     .legal {
@@ -617,6 +652,12 @@ $color_sugar_chic: #6e4ccc;
     }
     section {
         margin: auto;
+    }
+    .section__chic {
+        margin-bottom: 25%;
+    }
+    .section__delice {
+        margin-bottom: 25%;
     }
     .section__palette {
         padding-bottom: 10%;
