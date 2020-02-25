@@ -560,7 +560,6 @@ $color_sugar_chic: #6e4ccc;
             right: 0px;
             top: 50%;
             height: 6px;
-            border-style: wavy;
             border-radius: 5rem;
             background: linear-gradient(135deg, #beff7f, #3d923a);
         }
@@ -633,6 +632,11 @@ $color_sugar_chic: #6e4ccc;
             &::before, &::after {
                 width: 20%;
             }
+        }
+    }
+    .section__note, .section__chic, .section__delice, .section__palette {
+        p {
+            padding-right: 10%;
         }
     }
 }
