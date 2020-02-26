@@ -17,7 +17,7 @@ header {
     padding: 0.5rem 0;
 }
 
-article {
+.container__menus {
     display: flex;
     margin: auto;
     max-height: fit-content;
@@ -81,7 +81,6 @@ $shadow: #00000050;
 }
 
 /* Animation points de suspensions */
-
 .spinner {
     padding-left: 4%;
     padding-right: 4%;
@@ -93,7 +92,7 @@ $shadow: #00000050;
     background-color: #fdcc46dc;
     border-radius: 100%;
     display: inline-block;
-    animation: bouncedelay 1.4s infinite ease-in-out both;
+    animation: bouncedelay 1.5s infinite ease-in-out both;
 }
 
 .spinner .bounce1 {
@@ -116,7 +115,7 @@ $shadow: #00000050;
 /* Pied de page */
 $shake-intensity: 4%;
 
-@keyframes wiggle {
+@keyframes wiggle { /* Animation pour secouer */
     25% {
         // entièrement à droite
         transform: translateX($shake-intensity);
@@ -136,36 +135,41 @@ footer {
     bottom: 0;
     width: 100%;
     padding: 0.5% 0;
+    address {
+    font-style: normal;
+}
 }
 
 .legal {
     display: inline-block;
     &:hover {
-        animation: wiggle 100ms cubic-bezier(.4,.1,.6,.9) 3;
+        animation: wiggle 100ms cubic-bezier(.4,.1,.6,.9) 3; /* Animation pour secouer */
     }
 }
 
 .contact {
     display: inline-block;
     &:hover {
-        animation: wiggle 100ms cubic-bezier(.4,.1,.6,.9) 3;
+        animation: wiggle 100ms cubic-bezier(.4,.1,.6,.9) 3; /* Animation pour secouer */
     }
 }
+
+
 
 a {
     text-decoration: none;
     color: #fdcb46;
 }
 
-.grid {
+.grid { /* Grid template pour organiser le positionnement du texte dans le footer */
     display: grid;
     display: flex;
-    .areaA{
+    .area__legal{
         flex: 1;
         text-align: left;
         margin-left: 2%;
     }
-    .areaB {
+    .area__contact {
         flex: 1;
         text-align: right;
         margin-right: 2%;
@@ -599,7 +603,7 @@ $color_sugar_chic: #6e4ccc;
     @-webkit-viewport {
         width: device-width;
     }
-    article {
+    .container__menus {
         flex-direction: column; 
     }
     .menu_note, .menu_chic, .menu_delice, .menu_palette {
@@ -643,13 +647,6 @@ $color_sugar_chic: #6e4ccc;
 
 /* Media Queries pour les écrans de petites tailles <1024px */
 @media all and (max-width: 1023px) {
-    .legal {
-        right: 17rem;
-    }
-    
-    .contact {
-        left: 17rem;
-    }
     #bloc_page {
         min-width: 100%;
         margin: auto;

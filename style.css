@@ -18,7 +18,7 @@ header {
   padding: 0.5rem 0;
 }
 
-article {
+.container__menus {
   display: flex;
   margin: auto;
   max-height: fit-content;
@@ -89,7 +89,7 @@ article {
   background-color: #fdcc46dc;
   border-radius: 100%;
   display: inline-block;
-  animation: bouncedelay 1.4s infinite ease-in-out both;
+  animation: bouncedelay 1.5s infinite ease-in-out both;
 }
 
 .spinner .bounce1 {
@@ -110,6 +110,7 @@ article {
 }
 /* Pied de page */
 @keyframes wiggle {
+  /* Animation pour secouer */
   25% {
     transform: translateX(4%);
   }
@@ -127,12 +128,16 @@ footer {
   width: 100%;
   padding: 0.5% 0;
 }
+footer address {
+  font-style: normal;
+}
 
 .legal {
   display: inline-block;
 }
 .legal:hover {
   animation: wiggle 100ms cubic-bezier(0.4, 0.1, 0.6, 0.9) 3;
+  /* Animation pour secouer */
 }
 
 .contact {
@@ -140,6 +145,7 @@ footer {
 }
 .contact:hover {
   animation: wiggle 100ms cubic-bezier(0.4, 0.1, 0.6, 0.9) 3;
+  /* Animation pour secouer */
 }
 
 a {
@@ -148,15 +154,16 @@ a {
 }
 
 .grid {
+  /* Grid template pour organiser le positionnement du texte dans le footer */
   display: grid;
   display: flex;
 }
-.grid .areaA {
+.grid .area__legal {
   flex: 1;
   text-align: left;
   margin-left: 2%;
 }
-.grid .areaB {
+.grid .area__contact {
   flex: 1;
   text-align: right;
   margin-right: 2%;
@@ -596,7 +603,7 @@ p {
   @-webkit-viewport {
     width: device-width;
   }
-  article {
+  .container__menus {
     flex-direction: column;
   }
 
@@ -628,14 +635,6 @@ p {
 }
 /* Media Queries pour les écrans de petites tailles <1024px */
 @media all and (max-width: 1023px) {
-  .legal {
-    right: 17rem;
-  }
-
-  .contact {
-    left: 17rem;
-  }
-
   #bloc_page {
     min-width: 100%;
     margin: auto;
