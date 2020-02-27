@@ -36,7 +36,6 @@ $shadow: #00000050;
     &:hover {
         transform: scale(1.10);
         opacity: 0.7;
-        
     }
 }
 
@@ -78,12 +77,15 @@ $shadow: #00000050;
     padding: 1% 5%;
     width: 230px;
     margin-bottom: 25%;
+    p {
+        margin: auto;
+        margin-left: 0;
+    }
 }
 
 /* Animation points de suspensions */
 .spinner {
     padding-left: 4%;
-    padding-right: 4%;
 }
 
 .spinner > div {
@@ -113,16 +115,39 @@ $shadow: #00000050;
 }
 
 /* Pied de page */
-$shake-intensity: 4%;
-
 @keyframes wiggle { /* Animation pour secouer */
-    25% {
-        // entièrement à droite
-        transform: translateX($shake-intensity);
+    0% { 
+        transform: translateX(1px) rotate(0deg); 
     }
-    75% {
-        // entièrement à gauche
-        transform: translateX(-$shake-intensity);
+    10% { 
+        transform: translateY(-1px) rotate(-1deg); 
+    }
+    20% { 
+        transform: translateX(-3px) rotate(1deg); 
+    }
+    30% { 
+        transform: translateY(3px) rotate(0deg); 
+    }
+    40% { 
+        transform: translateX(1px) rotate(1deg); 
+    }
+    50% { 
+        transform: translateY(-1px) rotate(-1deg); 
+    }
+    60% { 
+        transform: translateX(-3px) rotate(0deg); 
+    }
+    70% { 
+        transform: translateY(3px) rotate(-1deg); 
+    }
+    80% { 
+        transform: translateX(-1px) rotate(1deg); 
+    }
+    90% { 
+        transform: translateY(1px) rotate(0deg);
+    }
+    100% { 
+        transform: translateX(1px) rotate(-1deg); 
     }
 }
 
@@ -143,18 +168,16 @@ footer {
 .legal {
     display: inline-block;
     &:hover {
-        animation: wiggle 100ms cubic-bezier(.4,.1,.6,.9) 3; /* Animation pour secouer */
+        animation: wiggle 300ms cubic-bezier(.4,.1,.6,.9) infinite/* Animation pour secouer */
     }
 }
 
 .contact {
     display: inline-block;
     &:hover {
-        animation: wiggle 100ms cubic-bezier(.4,.1,.6,.9) 3; /* Animation pour secouer */
+        animation: wiggle 300ms cubic-bezier(.4,.1,.6,.9) infinite; /* Animation pour secouer */
     }
 }
-
-
 
 a {
     text-decoration: none;
@@ -609,6 +632,9 @@ $color_sugar_chic: #6e4ccc;
     .menu_note, .menu_chic, .menu_delice, .menu_palette {
         margin: auto;
         margin: 3% 3%;
+    }
+    footer {
+        font-size: 1.17rem;
     }
 }
 

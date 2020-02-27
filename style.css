@@ -76,11 +76,14 @@ header {
   width: 230px;
   margin-bottom: 25%;
 }
+.btn__future p {
+  margin: auto;
+  margin-left: 0;
+}
 
 /* Animation points de suspensions */
 .spinner {
   padding-left: 4%;
-  padding-right: 4%;
 }
 
 .spinner > div {
@@ -111,11 +114,38 @@ header {
 /* Pied de page */
 @keyframes wiggle {
   /* Animation pour secouer */
-  25% {
-    transform: translateX(4%);
+  0% {
+    transform: translateX(1px) rotate(0deg);
   }
-  75% {
-    transform: translateX(-4%);
+  10% {
+    transform: translateY(-1px) rotate(-1deg);
+  }
+  20% {
+    transform: translateX(-3px) rotate(1deg);
+  }
+  30% {
+    transform: translateY(3px) rotate(0deg);
+  }
+  40% {
+    transform: translateX(1px) rotate(1deg);
+  }
+  50% {
+    transform: translateY(-1px) rotate(-1deg);
+  }
+  60% {
+    transform: translateX(-3px) rotate(0deg);
+  }
+  70% {
+    transform: translateY(3px) rotate(-1deg);
+  }
+  80% {
+    transform: translateX(-1px) rotate(1deg);
+  }
+  90% {
+    transform: translateY(1px) rotate(0deg);
+  }
+  100% {
+    transform: translateX(1px) rotate(-1deg);
   }
 }
 footer {
@@ -136,15 +166,14 @@ footer address {
   display: inline-block;
 }
 .legal:hover {
-  animation: wiggle 100ms cubic-bezier(0.4, 0.1, 0.6, 0.9) 3;
-  /* Animation pour secouer */
+  animation: wiggle 300ms cubic-bezier(0.4, 0.1, 0.6, 0.9) infinite;
 }
 
 .contact {
   display: inline-block;
 }
 .contact:hover {
-  animation: wiggle 100ms cubic-bezier(0.4, 0.1, 0.6, 0.9) 3;
+  animation: wiggle 300ms cubic-bezier(0.4, 0.1, 0.6, 0.9) infinite;
   /* Animation pour secouer */
 }
 
@@ -610,6 +639,10 @@ p {
   .menu_note, .menu_chic, .menu_delice, .menu_palette {
     margin: auto;
     margin: 3% 3%;
+  }
+
+  footer {
+    font-size: 1.17rem;
   }
 }
 /* Media Queries pour les écrans de petites tailles <768px */
