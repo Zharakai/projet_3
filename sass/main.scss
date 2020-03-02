@@ -278,7 +278,7 @@ $primary_color_note: #3d1319;
         left: 0px;
         top: 50%;
         background: $primary_color_note;
-        border-radius: 5rem;
+        border-radius: 50% 20% / 10% 40%;
     }
     &::after { /* Bordures de décoration (note enchantée) */
         content: "";
@@ -289,7 +289,7 @@ $primary_color_note: #3d1319;
         right: 0px;
         top: 50%;
         background: $primary_color_note;
-        border-radius: 5rem;
+        border-radius: 50% 20% / 10% 40%;
     }
 
     a { /* Animation pour souligner de gauche à droite entrées/plats/desserts (note enchantée) */
@@ -344,20 +344,20 @@ $color_sugar_chic: #6e4ccc;
             content: "";
             display: block;
             position: absolute;
-            width: 35%;
+            width: 30%;
             left: 0px;
             top: 50%;
-            border-top: solid 6px;
+            border-top: solid 7px;
             border-radius: 60% 0 0 60%;
         }
         &::after { /* Bordures de décoration */
             content: "";
             display: block;
             position: absolute;
-            width: 35%;
+            width: 30%;
             right: 0px;
             top: 50%;
-            border-top: solid 6px;
+            border-top: solid 7px;
             border-radius: 0 60% 60% 0;
         }
     }
@@ -579,8 +579,8 @@ $color_sugar_chic: #6e4ccc;
             width: 35%;
             left: 0px;
             top: 50%;
-            height: 6px;
-            border-radius: 5rem;
+            height: 7px;
+            border-radius: 10% 30% 30% 10%;
             background: linear-gradient(135deg, #3d923a, #beff7f);
         }
         &::after { /* Bordures de décoration */
@@ -590,8 +590,8 @@ $color_sugar_chic: #6e4ccc;
             width: 35%;
             right: 0px;
             top: 50%;
-            height: 6px;
-            border-radius: 5rem;
+            height: 7px;
+            border-radius: 30% 10% 10% 30%;
             background: linear-gradient(135deg, #beff7f, #3d923a);
         }
         a { /* Animation pour souligner de gauche à droite entrées/plats/desserts (délice des papilles) */
