@@ -320,8 +320,8 @@ p {
   visibility: hidden;
   -webkit-transform: scaleX(0);
   transform: scaleX(0);
-  -webkit-transition: all 300ms ease-in-out 0s;
-  transition: all 300ms ease-in-out 0s;
+  -webkit-transition: all 300ms ease-in-out;
+  transition: all 300ms ease-in-out;
   transform-origin: left;
 }
 
@@ -383,8 +383,8 @@ p {
   visibility: hidden;
   -webkit-transform: scaleX(0);
   transform: scaleX(0);
-  -webkit-transition: all 300ms ease-in-out 0s;
-  transition: all 300ms ease-in-out 0s;
+  -webkit-transition: all 300ms ease-in-out;
+  transition: all 300ms ease-in-out;
   transform-origin: left;
 }
 .section__chic .chic__entrance {
@@ -496,8 +496,8 @@ p {
   visibility: hidden;
   -webkit-transform: scaleX(0);
   transform: scaleX(0);
-  -webkit-transition: all 300ms ease-in-out 0s;
-  transition: all 300ms ease-in-out 0s;
+  -webkit-transition: all 300ms ease-in-out;
+  transition: all 300ms ease-in-out;
   transform-origin: left;
 }
 .section__delice .h3__commencer::before, .section__delice .h3__commencer::after {
@@ -584,8 +584,8 @@ p {
   visibility: hidden;
   -webkit-transform: scaleX(0);
   transform: scaleX(0);
-  -webkit-transition: all 300ms ease-in-out 0s;
-  transition: all 300ms ease-in-out 0s;
+  -webkit-transition: all 300ms ease-in-out;
+  transition: all 300ms ease-in-out;
   transform-origin: left;
 }
 
