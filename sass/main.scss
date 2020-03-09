@@ -23,7 +23,7 @@ header {
     max-height: fit-content;
 }
 
-.main__legal {
+.main__legal { /* Mentions légales */
     margin-bottom: 22%;
 }
 
@@ -31,13 +31,13 @@ header {
 
 $shadow: #00000050;
 
-.menu {
+.menu { 
     max-width: 100%;
     transform: scale(1);
     transition: ease-in-out 250ms;
     opacity: 1;
     margin-bottom: -4%;
-    &:hover {
+    &:hover { /* Animation de zoom sur images menus */
         transform: scale(1.10);
         opacity: 0.7;
     }
@@ -67,7 +67,7 @@ $shadow: #00000050;
     overflow: hidden;
 }
 
-.btn__future {
+.btn__future { /* Bouton "Prochainement..." */
     font-family: 'Prompt', sans-serif;
     display: flex;
     flex-wrap: nowrap;
@@ -360,6 +360,58 @@ $color_sugar_chic: #6e4ccc;
             border-top: solid 7px;
             border-radius: 0 60% 60% 0;
         }
+        a { /* Animation pour souligner de gauche à droite entrées/plats/desserts (chic à la française) */
+            position: relative;
+            text-decoration: none;
+            &:hover {
+                &::before {
+                    visibility: visible;
+                    -webkit-transform: scaleX(1);
+                    transform: scaleX(1);
+                }
+            }
+            &::before {
+                content: "";
+                position: absolute;
+                width: 100%;
+                height: 2px;
+                bottom: 0;
+                left: 0;
+                visibility: hidden;
+                -webkit-transform: scaleX(0);
+                transform: scaleX(0);
+                -webkit-transition: all 300ms ease-in-out 0s;
+                transition: all 300ms ease-in-out 0s;
+                transform-origin: left;
+            }
+        }
+    }
+    .chic__entrance {
+        color: $color_entrance_chic;
+        a {
+            color: $color_entrance_chic;
+            &::before {
+                background-color: $color_entrance_chic;
+            }
+        }
+    }
+    .chic__main {
+        color: $color_main_chic;
+        a {
+            color: $color_main_chic;
+            &::before {
+                background-color: $color_main_chic;
+            }
+        }
+    }
+    .chic__sugar {
+        color: $color_sugar_chic;
+        a {
+            color: $color_sugar_chic;
+            &::before {
+                background-color: $color_sugar_chic;
+            }
+        }
     }
     .h2__chic {
         font-family: 'Croissant One', cursive, sans-serif;
@@ -369,100 +421,6 @@ $color_sugar_chic: #6e4ccc;
         -webkit-text-fill-color: transparent;
         padding-top: 5%;
         padding-bottom: 5%;
-    }
-
-    .chic__entrance {
-        color: $color_entrance_chic;
-        a { /* Animation pour souligner de gauche à droite entrées/plats/desserts (chic à la française) */
-            position: relative;
-            color: $color_entrance_chic;
-            text-decoration: none;
-            &:hover {
-                color: $color_entrance_chic;
-                &::before {
-                    visibility: visible;
-                    -webkit-transform: scaleX(1);
-                    transform: scaleX(1);
-                }
-            }
-            &::before {
-                content: "";
-                position: absolute;
-                width: 100%;
-                height: 2px;
-                bottom: 0;
-                left: 0;
-                background-color: $color_entrance_chic;
-                visibility: hidden;
-                -webkit-transform: scaleX(0);
-                transform: scaleX(0);
-                -webkit-transition: all 300ms ease-in-out 0s;
-                transition: all 300ms ease-in-out 0s;
-                transform-origin: left;
-            }
-        }
-    }
-    .chic__main {
-        color: $color_main_chic;
-        a { /* Animation pour souligner de gauche à droite entrées/plats/desserts (chic à la française) */
-            position: relative;
-            color: $color_main_chic;
-            text-decoration: none;
-            &:hover {
-                color: $color_main_chic;
-                &::before {
-                    visibility: visible;
-                    -webkit-transform: scaleX(1);
-                    transform: scaleX(1);
-                }
-            }
-            &::before {
-                content: "";
-                position: absolute;
-                width: 100%;
-                height: 2px;
-                bottom: 0;
-                left: 0;
-                background-color: $color_main_chic;
-                visibility: hidden;
-                -webkit-transform: scaleX(0);
-                transform: scaleX(0);
-                -webkit-transition: all 300ms ease-in-out 0s;
-                transition: all 300ms ease-in-out 0s;
-                transform-origin: left;
-            }
-        }
-    }
-    .chic__sugar {
-        color: $color_sugar_chic;
-        a { /* Animation pour souligner de gauche à droite entrées/plats/desserts (chic à la française) */
-            position: relative;
-            color: $color_sugar_chic;
-            text-decoration: none;
-            &:hover {
-                color: $color_sugar_chic;
-                &::before {
-                    visibility: visible;
-                    -webkit-transform: scaleX(1);
-                    transform: scaleX(1);
-                }
-            }
-            &::before {
-                content: "";
-                position: absolute;
-                width: 100%;
-                height: 2px;
-                bottom: 0;
-                left: 0;
-                background-color: $color_sugar_chic;
-                visibility: hidden;
-                -webkit-transform: scaleX(0);
-                transform: scaleX(0);
-                -webkit-transition: all 300ms ease-in-out 0s;
-                transition: all 300ms ease-in-out 0s;
-                transform-origin: left;
-            }
-        }
     }
 }
 
